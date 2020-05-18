@@ -1,10 +1,14 @@
 const  CustomError = require("../errors/custom-error");
 
-const errorHandler = (error, req, res, next) => {
+module.exports = (error, req, res, next) => {
     let status = 400;
-    let errors = [ { message: "Internal Server Error" } ] 
+    let errors = [{ 
+        message: 
+        "Internal Server Error"
+    }] 
     
-    if (process.env.NODE_ENV === 'dev') errors[0].stack = error.stack;
+    if (process.env.NODE_ENV === 'dev') 
+        errors[0].stack = error.stack;
 
     if (error instanceof CustomError)  {
         status = error.statusCode;
@@ -13,5 +17,3 @@ const errorHandler = (error, req, res, next) => {
 
     res.status(status).json({ errors })
 }
-
-module.exports = errorHandler
