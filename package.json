@@ -1,0 +1,20 @@
+{
+  "name": "rest-handle-errors",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Jimmy Codder",
+    "email": "alluminox.devellopers@gmail.com",
+    "url": "https://github.com/Alluminox/jadeerp-rest-handle-errors.git"
+  },
+  "contributors": [
+    "jimmycodder"
+  ],
+  "bugs": "https://github.com/Alluminox/jadeerp-rest-handle-errors/issues",
+  "homepage": "https://github.com/Alluminox/jadeerp-rest-handle-errors.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alluminox/jadeerp-rest-handle-errors/issues"
+  }
+}
